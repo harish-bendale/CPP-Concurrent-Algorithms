@@ -18,6 +18,6 @@ int main() {
     std::cout<<*ptr<<std::endl;// Ownership problem (It's working in mac and linux OS but could program trashed in other OS
     std::unique_ptr<temp> obj1 = std::unique_ptr<temp> (new temp);
     std::unique_ptr<temp[]> obj2 = std::unique_ptr<temp[]> (new temp[5]);
-    
+    std::unique_ptr<temp> obj3 = std::make_unique<temp>();
     
 }
